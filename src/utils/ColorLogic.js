@@ -7,7 +7,6 @@ export function rgbToHex(r, g, b) {
   var rgb = [r, g, b];
   rgb = rgb.map((color) => componentToHex(Math.round(color)));
   return "#" + rgb.join("");
-  //return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
 export function hexToRgb(hex) {

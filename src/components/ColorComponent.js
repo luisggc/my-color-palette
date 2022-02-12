@@ -38,6 +38,5 @@ export default function ColorComponent({ color, division_number }) {
           Copiado!
         </div>
     </div>
-    /* {{ margin: '25px'}} */
   );
 }
