@@ -26,16 +26,25 @@ export default function App() {
   return (
     <>
       <header>
-        <div>My personal color generator</div>
+        <div>
+          <h1>My Color Palette Generator :)</h1>
+          <p>Click the color and It will be copied</p>
+        </div>
         <div>
           <input
             ref={inputEl}
-            placeholder="ff0000"
+            placeholder="Main color. Example: #FF0000"
             onChange={(e) => validateAndSetColor(e.target.value)}
           />
         </div>
       </header>
-      <div className='palleteList'>
+      <div className="github">
+        <p>
+          Whant to know more about how It was done? Check{" "}
+          <a href="https://github.com/luisggc/my-color-palette">my GitHub</a>.
+        </p>
+      </div>
+      <div className="palleteList">
         {colors.map(([my_column, division_number]) => (
           <ColorComponent
             key={division_number}

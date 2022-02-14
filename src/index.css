@@ -141,6 +141,7 @@ header {
 input {
   margin-left: 30px;
   height: 30px;
+  width: 250px;
   padding: 0.5rem 1rem;
   border-color: transparent;
 }
@@ -151,8 +152,6 @@ input {
   flex-wrap: wrap;
   flex-grow: 1;
 }
-
-
 
 .singleColor {
   min-width: 200px;
@@ -166,22 +165,26 @@ input {
 }
 
 .copied {
-visibility: hidden;
   font-size: 20px;
-  visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
 }
 
 .copied.active {
-    visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.5s linear;
+}
 
-  }
+.github {
+  margin: 0 0 20px 20px;
+  font-size: 10px;
+}
 
-
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-  }
+header h1{
+  font-size: 20px;
+  font-weight: bold;
+}
+header p{
+  margin-top: 7px;
+  font-size: 10px;
+}
