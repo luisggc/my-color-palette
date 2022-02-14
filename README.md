@@ -1,3 +1,9 @@
+# Live demo
+
+Check a live demo here: [https://my-color-palette-generator.netlify.app/](https://my-color-palette-generator.netlify.app/)
+
+![Example](Screenshot.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

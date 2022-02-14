@@ -135,16 +135,40 @@ table {
 
 header {
   display: flex;
-  margin: 20px;
+  padding: 20px;
+  background-color: black;
   align-items: center;
+  color: white;
+  flex-wrap: wrap;
 }
-input {
-  margin-left: 30px;
+
+header h1{
+  font-size: 20px;
+  font-weight: bold;
+}
+header p{
+  margin-top: 7px;
+  font-size: 10px;
+}
+
+header input {
+  margin: 10px 30px;
   height: 30px;
   width: 250px;
   padding: 0.5rem 1rem;
   border-color: transparent;
 }
+
+header .github {
+  font-size: 10px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+header .github a {
+  color: red;
+}
+
 
 .palleteList {
   display: flex;
@@ -175,16 +199,5 @@ input {
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-.github {
-  margin: 0 0 20px 20px;
-  font-size: 10px;
-}
 
-header h1{
-  font-size: 20px;
-  font-weight: bold;
-}
-header p{
-  margin-top: 7px;
-  font-size: 10px;
-}
+

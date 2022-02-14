@@ -37,13 +37,13 @@ export default function App() {
             onChange={(e) => validateAndSetColor(e.target.value)}
           />
         </div>
+        <div className="github">
+          <p>
+            Whant to know more about how It was done? Check{" "}
+            <a href="https://github.com/luisggc/my-color-palette">my GitHub</a>.
+          </p>
+        </div>
       </header>
-      <div className="github">
-        <p>
-          Whant to know more about how It was done? Check{" "}
-          <a href="https://github.com/luisggc/my-color-palette">my GitHub</a>.
-        </p>
-      </div>
       <div className="palleteList">
         {colors.map(([my_column, division_number]) => (
           <ColorComponent
