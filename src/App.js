@@ -1,12 +1,11 @@
-import { useState, useMemo, useRef } from "react";
+import { useState } from "react";
 import ColorComponent from "./components/ColorComponent";
 import { rgbToHex, hexToRgb, checkValidHex } from "./utils/ColorLogic";
 
 export default function App() {
-  const inputEl = useRef(null);
   const [color, setColor] = useState("ff0000");
-  const [subdivision, _] = useState(10);
-  const primary_color = hexToRgb(color)
+  const [subdivision, setSubdivision] = useState(10);
+  const primary_color = hexToRgb(color);
 
   const validateAndSetColor = (color) => {
     if (checkValidHex(color)) {
@@ -30,15 +29,29 @@ export default function App() {
           <h1>My Color Palette Generator :)</h1>
           <p>Click the color and It will be copied</p>
         </div>
-        <div>
-          <input
-            ref={inputEl}
-            placeholder="Main color. Example: #FF0000"
-            onChange={(e) => validateAndSetColor(e.target.value)}
-          />
+        <div className="inputGroup">
+          <div>
+            <input
+              placeholder="Main color. Default: #FF0000"
+              onChange={(e) => validateAndSetColor(e.target.value)}
+              style={{ width: "170px" }}
+            />
+          </div>
+          <div>
+            <input
+              placeholder="Subdivisions. Default: 10"
+              type="number"
+              min="1"
+              max="30"
+              onChange={(e) => setSubdivision(e.target.value)}
+              style={{ width: "170px" }}
+            />
+          </div>
         </div>
         <div className="github">
-            <a href="https://github.com/luisggc/my-color-palette"><i class="fa fa-github" style={{fontSize: 36}}></i></a>
+          <a href="https://github.com/luisggc/my-color-palette">
+            <i class="fa fa-github" style={{ fontSize: 36 }}></i>
+          </a>
         </div>
       </header>
       <div className="palleteList">
