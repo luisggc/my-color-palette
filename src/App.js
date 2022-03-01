@@ -6,7 +6,7 @@ export default function App() {
   const inputEl = useRef(null);
   const [color, setColor] = useState("ff0000");
   const [subdivision, _] = useState(10);
-  const primary_color = useMemo(() => hexToRgb(color), [color]);
+  const primary_color = hexToRgb(color)
 
   const validateAndSetColor = (color) => {
     if (checkValidHex(color)) {
@@ -38,10 +38,7 @@ export default function App() {
           />
         </div>
         <div className="github">
-          <p>
-            Whant to know more about how It was done? Check{" "}
-            <a href="https://github.com/luisggc/my-color-palette">my GitHub</a>.
-          </p>
+            <a href="https://github.com/luisggc/my-color-palette"><i class="fa fa-github" style={{fontSize: 36}}></i></a>
         </div>
       </header>
       <div className="palleteList">
