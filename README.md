@@ -2,6 +2,11 @@
 
 Check a live demo here: [https://my-color-palette-generator.netlify.app/](https://my-color-palette-generator.netlify.app/)
 
+- Color Logic Implementation
+- FlexBox
+- Clipboard with promises
+- State Hook
+
 ![Example](Screenshot.png)
 
 # Getting Started with Create React App
