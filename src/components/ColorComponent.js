@@ -30,7 +30,7 @@ export default function ColorComponent({ color, division_number }) {
       onClick={() => copyToClipBoard(color)}
     >
       <div >
-        <div>{100 * division_number + "%"}</div>
+        <div>{Math.round(100 * division_number) + "%"}</div>
         <div style={{ marginTop: "5px" }}>{color}</div>
       </div>
       

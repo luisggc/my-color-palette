@@ -43,14 +43,17 @@ export default function App() {
               type="number"
               min="1"
               max="30"
-              onChange={(e) => setSubdivision(e.target.value)}
+              step="1"
+              onChange={(e) =>
+                e.target.value>0 && setSubdivision(Math.round(e.target.value))
+              }
               style={{ width: "170px" }}
             />
           </div>
         </div>
         <div className="github">
           <a href="https://github.com/luisggc/my-color-palette">
-            <i class="fa fa-github" style={{ fontSize: 36 }}></i>
+            <i className="fa fa-github" style={{ fontSize: 36 }}></i>
           </a>
         </div>
       </header>
